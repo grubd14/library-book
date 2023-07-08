@@ -1,5 +1,5 @@
 body {
-  font-family: 'Agdasima';
+  font-family: "Agdasima";
 }
 
 .navigation-container {
@@ -8,7 +8,7 @@ body {
 }
 
 .heading {
-  font-family: 'Agdasima', sans-serif;
+  font-family: "Agdasima", sans-serif;
   font-size: 3rem;
   font-weight: 550;
 }
@@ -16,11 +16,15 @@ body {
 .books-container {
   justify-content: center;
   padding: 20px;
+}
 
+.booklist-container {
+  justify-content: center;
+  padding: 20px;
 }
 
 h2 {
-  font-family: 'Agdasima';
+  font-family: "Agdasima";
   text-align: center;
 }
 
@@ -37,6 +41,20 @@ h2 {
 }
 
 .book-form button {
+  display: flex;
+  margin: 5px;
+}
+
+.book-list input {
+  display: inline-block;
+  margin: 5px;
+}
+.book-list {
+  display: flex;
+  justify-content: center;
+}
+
+.book-list button {
   display: flex;
   margin: 5px;
 }
