@@ -11,23 +11,19 @@ function Book(title, author, pages, read) {
   // }
 }
 
-let myBookTitle = 'My fairy tail';
-let myBookAuthor = 'Richard Dickins';
-let myBookPages = 699;
-let myBookReadInfo = 'read';
+function addBookToLibrary() {
+  const myBookTitle = document.querySelector(".book-form input[name='title']");
+  const myBookAuthor = document.querySelector(".book-form input[name='author'] ");
+  const myBookPages = document.querySelector(".book-form input[name='pages'] ");
+  const myBookReadInfo = document.querySelector(".book-form input[name='readInfo']");
 
-let myBook = new Book();
-myBook.title = myBookTitle;
-myBook.author = myBookAuthor;
-myBook.pages = myBookPages;
-myBook.read = myBookReadInfo;
+  let myBook = new Book();
+  myBook.title = myBookTitle.value;
+  myBook.author = myBookAuthor.value;
+  myBook.pages = myBookPages.value;
+  myBook.read = myBookReadInfo.value;
 
-myLibrary.push(myBook);
+  myLibrary.push(myBook);
+}
 
 
-
-
-console.log(myLibrary);
-// myLibrary.info();
-// console.log(myLibrary.info());
-/* console.log(myLibrary); */
