@@ -24,17 +24,27 @@
         <input type="text" name="title" placeholder="Title" />
         <input type="text" name="author" placeholder="Author" />
         <input type="number" name="pages" placeholder="Pages" />
-        <input type="text" name="readInfo" placeholder="Read Info">
-        <button type="submit" onclick="addBookToLibrary()">Add book</button>
+        <input type="text" name="readInfo" placeholder="Read Info" />
+        <button type="submit" onclick="addBookToLibrary();showBooksInLibrary()">Add book</button>
       </div>
     </div>
     <div class="booklist-container">
       <h2>Book List</h2>
       <div class="book-list">
-        <input type="text" name="Search" placeholder="Search..." />
-        <button type="button" onclick="">Search Books</button>
-        <ul id="books"></ul>
+        <!-- <input type="text" name="Search" placeholder="Search..." /> -->
+        <!--         <button type="button" onclick="showBooksInLibrary()">Show Books</button> -->
+        <!-- <ul id="books"> -->
+        <table id="books-table">
+           <tr class="book-info-list-tree">
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Pages No</th>
+            <th>Read Info</th>
+          </tr>
+        </table>
+        <!--  </ul> -->
       </div>
+      <button type="button" onclick="showBooksInLibrary()">Show Books</button>
     </div>
     <script src="library.js"></script>
   </body>

@@ -45,16 +45,29 @@ h2 {
   margin: 5px;
 }
 
-.book-list input {
-  display: inline-block;
-  margin: 5px;
-}
+/* .book-list input { */
+/*   display: inline-block; */
+/*   margin: 5px; */
+/* } */
 .book-list {
   display: flex;
   justify-content: center;
 }
 
+/* .book-info-list { */
+/*   display: flex; */
+/*   justify-content: center; */
+/* } */
 .book-list button {
   display: flex;
   margin: 5px;
 }
+
+table, td , th {
+  border: 1px solid black;
+  padding: 16px;
+}
+
+/* #books-table { */
+/*   justify-content: center; */
+/* } */

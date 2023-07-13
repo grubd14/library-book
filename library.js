@@ -1,5 +1,17 @@
-/* let myLibrary = new Book('Introduction to JavaScript', 'Robert Dickward', 478, 'not read'); */
-const myLibrary = [];
+const myLibrary = [
+  // {
+  //   title: "Hello",
+  //   author: "World",
+  //   pages: 123,
+  //   read: "not read",
+  // },
+  // {
+  //   title: "My God",
+  //   author: "Is this",
+  //   pages: 321,
+  //   read: "Read",
+  // },
+];
 
 function Book(title, author, pages, read) {
   this.title;
@@ -26,4 +38,18 @@ function addBookToLibrary() {
   myLibrary.push(myBook);
 }
 
+function showBooksInLibrary() {
+  const booksShowcase = document.getElementById("books-table");
+  for (let index = 0; index < myLibrary.length; index++) {
+    const booksList = document.createElement("tr");
+    booksList.classList.add("book-info-list");
+    booksList.innerHTML = `
+    <td>${myLibrary[index].title}</td>
+    <td>${myLibrary[index].author}</td>
+    <td>${myLibrary[index].pages}</td>
+    <td>${myLibrary[index].read}</td>
+`;
+    booksShowcase.appendChild(booksList);
+  }
+}
 
